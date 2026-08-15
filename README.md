@@ -46,6 +46,7 @@ If you are not sure which path fits, take the **Beginner** path first. The follo
 | [Evaluation sheet](templates/evaluation-sheet.md) | Testing whether an AI-assisted workflow meets your success criteria |
 | [Project showcase](templates/project-showcase.md) | Sharing a learning project with the community |
 | [Official guides](resources/official-guides.md) | Continuing from trusted primary-source documentation |
+| [Community content calendar](resources/community-content-calendar.md) | A four-week, ethical content and membership-growth rhythm for community leaders |
 
 ## Community standard
 
