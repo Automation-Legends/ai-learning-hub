@@ -65,6 +65,9 @@ If you are not sure which path fits, take the **Beginner** path first. The follo
 | [Four-week completion badge and certificate](community/four-week-completion-badge-and-certificate.md) | Credential eligibility, GitHub badge review, printable certificate wording, and issuing process |
 | [Week 4 capstone FAQ](community/week-04-capstone-faq.md) | Comprehensive guidance on roles, safety, testing, grading, credentials, and support |
 | [Week 4 capstone slide-deck script](community/week-04-capstone-slide-deck-script.md) | Detailed presenter notes, timing, interactions, transitions, and question guidance for the capstone deck |
+| [Graduate email notification sequence](community/graduate-email-notification-sequence.md) | Privacy-safe opt-in congratulatory email, certificate delivery, and Day 7 and Day 30 follow-up guidance |
+| [Capstone team and progress tracker](community/capstone-team-and-progress-tracker.md) | Team-formation and milestone workflow, issue templates, status labels, and review boundaries |
+| [Capstone video walkthrough script](community/week-04-capstone-video-walkthrough-script.md) | Production-ready 12–15 minute script for project, testing, submission, and graduation onboarding |
 
 ## Community standard
 

@@ -1,0 +1,26 @@
+name: Send opt-in graduate follow-ups
+
+on:
+  schedule:
+    - cron: "0 14 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  send-followups:
+    if: vars.GRADUATE_EMAIL_NOTIFICATIONS_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Send Day 7 and Day 30 opt-in follow-ups
+        env:
+          GRADUATE_EMAIL_REGISTRY: ${{ secrets.GRADUATE_EMAIL_REGISTRY }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_FROM: ${{ secrets.SMTP_FROM }}
+          SMTP_USE_TLS: ${{ vars.SMTP_USE_TLS }}
+        run: python3 .github/scripts/send_due_graduate_followups.py

@@ -1,0 +1,67 @@
+name: Initialize capstone tracking issues
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  issues: write
+
+jobs:
+  initialize-capstone-issue:
+    if: >-
+      (github.event.action == 'opened' &&
+        (contains(github.event.issue.labels.*.name, 'type: capstone team') ||
+         contains(github.event.issue.labels.*.name, 'type: capstone progress'))) ||
+      (github.event.action == 'labeled' &&
+        (github.event.label.name == 'type: capstone team' ||
+         github.event.label.name == 'type: capstone progress'))
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add orientation status and comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const issue_number = context.issue.number;
+            const labels = context.payload.issue.labels.map((label) => label.name);
+            const isTeam = labels.includes('type: capstone team');
+            const isProgress = labels.includes('type: capstone progress');
+
+            if (!isTeam && !isProgress) {
+              core.info('Issue is not a capstone tracking record; no action needed.');
+              return;
+            }
+
+            const statusLabel = isTeam ? 'status: capstone team forming' : 'status: capstone review';
+            if (!labels.includes(statusLabel)) {
+              await github.rest.issues.addLabels({
+                owner,
+                repo,
+                issue_number,
+                labels: [statusLabel],
+              });
+            }
+
+            const comment = isTeam
+              ? [
+                  '## Capstone team record opened',
+                  '',
+                  'This issue is the team’s public, safe project record. Confirm role coverage, name an owner for each first artifact, and keep the proposed workflow within the documented draft-and-review boundary.',
+                  '',
+                  'A maintainer should change the status deliberately as the team forms, becomes active, encounters a blocker, enters review, prepares a demo, or completes the project.',
+                ].join('\n')
+              : [
+                  '## Capstone progress record opened',
+                  '',
+                  'Use this issue to show evidence: completed artifacts, five-case test results, a blocker or decision request, and the next focused milestone. Keep private information and credentials out of the issue.',
+                  '',
+                  'A maintainer reviews progress and changes project status deliberately. This automation does not judge quality, assign grades, or declare a project complete.',
+                ].join('\n');
+
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number,
+              body: comment,
+            });

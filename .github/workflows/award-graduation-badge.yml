@@ -1,10 +1,11 @@
-name: Award approved four-week graduate badge
+name: Approve graduation and send opt-in notification
 
 on:
   issues:
     types: [labeled]
 
 permissions:
+  contents: read
   issues: write
 
 jobs:
@@ -13,8 +14,11 @@ jobs:
       github.event.label.name == 'status: graduation approved' &&
       contains(github.event.issue.labels.*.name, 'type: four-week completion claim')
     runs-on: ubuntu-latest
+    outputs:
+      badge_awarded: ${{ steps.award.outputs.badge_awarded }}
     steps:
       - name: Apply graduate badge after maintainer approval
+        id: award
         uses: actions/github-script@v7
         with:
           script: |
@@ -25,6 +29,7 @@ jobs:
             const reviewLabel = 'status: graduation review';
 
             if (labels.includes(graduateLabel)) {
+              core.setOutput('badge_awarded', 'false');
               core.info('Graduate badge is already present; no action needed.');
               return;
             }
@@ -57,3 +62,28 @@ jobs:
                 'This label recognizes curriculum completion and evidence-based community practice. It is not a professional certification or authorization to deploy high-impact AI systems.',
               ].join('\n'),
             });
+
+            core.setOutput('badge_awarded', 'true');
+
+  send-graduate-email:
+    needs: award-graduate-badge
+    if: >-
+      needs.award-graduate-badge.outputs.badge_awarded == 'true' &&
+      vars.GRADUATE_EMAIL_NOTIFICATIONS_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Send opt-in graduate notification
+        env:
+          GRADUATE_GITHUB_LOGIN: ${{ github.event.issue.user.login }}
+          GRADUATE_ISSUE_URL: ${{ github.event.issue.html_url }}
+          GRADUATE_COMPLETION_DATE: ${{ github.event.issue.updated_at }}
+          GRADUATE_EMAIL_REGISTRY: ${{ secrets.GRADUATE_EMAIL_REGISTRY }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_FROM: ${{ secrets.SMTP_FROM }}
+          SMTP_USE_TLS: ${{ vars.SMTP_USE_TLS }}
+          GRADUATE_EMAIL_STAGE: initial
+        run: python3 .github/scripts/send_graduate_sequence_email.py
