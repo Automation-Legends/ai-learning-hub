@@ -50,6 +50,8 @@ If you are not sure which path fits, take the **Beginner** path first. The follo
 | [New-member onboarding](community/new-member-onboarding.md) | A welcoming first-week guide, introduction template, and clear next steps |
 | [First-week discussion and poll](community/first-week-discussion-and-poll.md) | Ready-to-publish community engagement copy and moderator guidance |
 | [Beginner AI tools and prompts](resources/beginner-ai-tools-and-prompts.md) | Tool-selection advice, direct official links, and ten safe starter prompts |
+| [Week 2: Automation workflows and APIs](intermediate/week-02-automation-workflows-and-apis.md) | An intermediate module on API requests, webhooks, credentials, and draft-and-review automation |
+| [Social media announcement](community/ai-learning-hub-social-announcement.md) | Platform-ready invitations and a publishing checklist for welcoming new members |
 
 ## Community standard
 

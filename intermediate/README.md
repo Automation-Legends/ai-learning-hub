@@ -13,6 +13,14 @@ The Intermediate Path is for members who can already get useful AI responses and
 | [3. Evaluation and safeguards](03-evaluation-and-safeguards.md) | How to define success criteria, test edge cases, and manage risks | A five-case evaluation sheet and escalation plan |
 | [4. Build an AI automation](04-build-an-ai-automation.md) | How to specify an automation with a trigger, AI step, review, and destination | A build-ready automation specification |
 
+## Weekly deep-dive modules
+
+The core sequence above builds the foundation. Use the weekly modules to apply those skills to a focused topic.
+
+| Module | Focus | Completion artifact |
+|---|---|---|
+| [**Week 2 — Automation Workflows and APIs**](week-02-automation-workflows-and-apis.md) | Connect workflow design to API requests, webhooks, credential safety, and draft-and-review automation | A one-page automation design and five-case test set |
+
 ## What you need
 
 Bring one recurring task that involves text, structured notes, categorization, summarization, drafting, or decision support. You do not need to code, though you may apply the concepts with code, an API, or a no-code automation tool. Use test data or authorized, minimized data while learning.
