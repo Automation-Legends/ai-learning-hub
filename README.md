@@ -56,6 +56,8 @@ If you are not sure which path fits, take the **Beginner** path first. The follo
 | [Week 3: Custom agents and vector databases](advanced/week-03-custom-agents-and-vector-databases.md) | An advanced module on bounded agents, knowledge retrieval, safeguards, and evaluation |
 | [Email newsletter templates](community/ai-learning-hub-email-newsletter-templates.md) | Five respectful invitation templates for opted-in subscribers |
 | [Week 1 and 2 completion badges](community/week-1-and-2-completion-badges.md) | Interactive progress checklists, badge claims, and maintainer review guidance |
+| [Week 4 collaborative capstone](community/week-04-collaborative-capstone.md) | A beginner-and-builder team project for a safe Community Resource Review Assistant |
+| [Live introductory video workshop](community/live-introductory-video-workshop.md) | A 45-minute facilitation outline and script for welcoming new community members |
 
 ## Community standard
 
