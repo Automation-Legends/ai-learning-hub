@@ -47,6 +47,9 @@ If you are not sure which path fits, take the **Beginner** path first. The follo
 | [Project showcase](templates/project-showcase.md) | Sharing a learning project with the community |
 | [Official guides](resources/official-guides.md) | Continuing from trusted primary-source documentation |
 | [Community content calendar](resources/community-content-calendar.md) | A four-week, ethical content and membership-growth rhythm for community leaders |
+| [New-member onboarding](community/new-member-onboarding.md) | A welcoming first-week guide, introduction template, and clear next steps |
+| [First-week discussion and poll](community/first-week-discussion-and-poll.md) | Ready-to-publish community engagement copy and moderator guidance |
+| [Beginner AI tools and prompts](resources/beginner-ai-tools-and-prompts.md) | Tool-selection advice, direct official links, and ten safe starter prompts |
 
 ## Community standard
 
