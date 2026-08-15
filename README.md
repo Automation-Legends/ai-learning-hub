@@ -63,6 +63,8 @@ If you are not sure which path fits, take the **Beginner** path first. The follo
 | [Workshop presentation script](community/live-introductory-workshop-presentation-script.md) | Slide-by-slide speaking notes, interactions, transitions, and question facilitation guidance |
 | [Week 4 social launch kit](community/week-04-capstone-social-launch-kit.md) | Platform-ready promotional posts, a seven-post X thread, graphic brief, and publishing checklist |
 | [Four-week completion badge and certificate](community/four-week-completion-badge-and-certificate.md) | Credential eligibility, GitHub badge review, printable certificate wording, and issuing process |
+| [Week 4 capstone FAQ](community/week-04-capstone-faq.md) | Comprehensive guidance on roles, safety, testing, grading, credentials, and support |
+| [Week 4 capstone slide-deck script](community/week-04-capstone-slide-deck-script.md) | Detailed presenter notes, timing, interactions, transitions, and question guidance for the capstone deck |
 
 ## Community standard
 

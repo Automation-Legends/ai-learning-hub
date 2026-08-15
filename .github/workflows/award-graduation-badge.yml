@@ -1,0 +1,59 @@
+name: Award approved four-week graduate badge
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  issues: write
+
+jobs:
+  award-graduate-badge:
+    if: >-
+      github.event.label.name == 'status: graduation approved' &&
+      contains(github.event.issue.labels.*.name, 'type: four-week completion claim')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Apply graduate badge after maintainer approval
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const issue_number = context.issue.number;
+            const labels = context.payload.issue.labels.map((label) => label.name);
+            const graduateLabel = 'badge: four-week AI Learning Hub graduate';
+            const reviewLabel = 'status: graduation review';
+
+            if (labels.includes(graduateLabel)) {
+              core.info('Graduate badge is already present; no action needed.');
+              return;
+            }
+
+            await github.rest.issues.addLabels({
+              owner,
+              repo,
+              issue_number,
+              labels: [graduateLabel],
+            });
+
+            if (labels.includes(reviewLabel)) {
+              await github.rest.issues.removeLabel({
+                owner,
+                repo,
+                issue_number,
+                name: reviewLabel,
+              });
+            }
+
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number,
+              body: [
+                '## Four-week completion approved',
+                '',
+                'A maintainer applied `status: graduation approved`, so the workflow awarded `badge: four-week AI Learning Hub graduate`.',
+                '',
+                'This label recognizes curriculum completion and evidence-based community practice. It is not a professional certification or authorization to deploy high-impact AI systems.',
+              ].join('\n'),
+            });

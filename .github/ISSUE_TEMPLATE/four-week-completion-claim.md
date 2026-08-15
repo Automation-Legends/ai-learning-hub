@@ -2,7 +2,7 @@
 name: Four-week completion claim
 about: Request the Automation Legends AI Learning Hub Graduate badge or certificate
 title: "Four-week completion claim: [member name]"
-labels: "status: graduation review"
+labels: "type: four-week completion claim, status: graduation review"
 assignees: ""
 ---
 

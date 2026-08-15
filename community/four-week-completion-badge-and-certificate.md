@@ -81,8 +81,10 @@ A maintainer should review the claim against the evidence rather than assuming t
 
 | Label | Color | Description |
 |---|---|---|
-| `badge: four-week AI Learning Hub graduate` | `C69214` | Completed the four-week AI Learning Hub curriculum with evidence of practice, verification, and collaboration. |
+| `type: four-week completion claim` | `1D76DB` | Identifies an issue as a four-week credential claim. |
 | `status: graduation review` | `FBCA04` | A maintainer must review the four-week completion evidence. |
+| `status: graduation approved` | `0E8A16` | A maintainer approved the evidence; the badge workflow may now run. |
+| `badge: four-week AI Learning Hub graduate` | `C69214` | Completed the four-week AI Learning Hub curriculum with evidence of practice, verification, and collaboration. |
 
 ### Recommended badge description
 
@@ -139,7 +141,7 @@ To maintain an accurate record, store the following fields in an approved facili
 1. A member opens a completion claim with all four weeks of evidence.
 2. A maintainer reviews the evidence against the checklist above.
 3. If evidence is incomplete, the maintainer names the smallest focused revision needed.
-4. Once approved, the maintainer applies **`badge: four-week AI Learning Hub graduate`** and closes the review.
+4. Once approved, the maintainer applies **`status: graduation approved`**. The repository workflow then adds **`badge: four-week AI Learning Hub graduate`**, removes the review label, and posts an auditable confirmation comment.
 5. If requested, the facilitator creates the printable certificate, assigns a unique credential ID, and records the issue link in the approved tracker.
 6. The member may share the credential, provided they represent its completion-only boundary accurately.
 
