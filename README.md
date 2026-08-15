@@ -61,6 +61,8 @@ If you are not sure which path fits, take the **Beginner** path first. The follo
 | [Week 4 feedback and grading rubric](community/week-04-capstone-feedback-and-grading-rubric.md) | An evidence-based assessment and feedback framework for beginner and intermediate capstone roles |
 | [Week 4 capstone launch email](community/week-04-capstone-launch-email.md) | A ready-to-send member announcement, plain-text version, and signup follow-up message |
 | [Workshop presentation script](community/live-introductory-workshop-presentation-script.md) | Slide-by-slide speaking notes, interactions, transitions, and question facilitation guidance |
+| [Week 4 social launch kit](community/week-04-capstone-social-launch-kit.md) | Platform-ready promotional posts, a seven-post X thread, graphic brief, and publishing checklist |
+| [Four-week completion badge and certificate](community/four-week-completion-badge-and-certificate.md) | Credential eligibility, GitHub badge review, printable certificate wording, and issuing process |
 
 ## Community standard
 
