@@ -54,6 +54,7 @@ If you are not sure which path fits, take the **Beginner** path first. The follo
 | [Week 2: Automation workflows and APIs](intermediate/week-02-automation-workflows-and-apis.md) | An intermediate module on API requests, webhooks, credentials, and draft-and-review automation |
 | [Social media announcement](community/ai-learning-hub-social-announcement.md) | Platform-ready invitations and a publishing checklist for welcoming new members |
 | [Week 3: Custom agents and vector databases](advanced/week-03-custom-agents-and-vector-databases.md) | An advanced module on bounded agents, knowledge retrieval, safeguards, and evaluation |
+| [Post-program: Multi-agent frameworks and production deployment](advanced/05-multi-agent-frameworks-and-production-deployment.md) | An advanced module on specialist contracts, orchestration, evaluation, monitoring, and controlled release planning |
 | [Email newsletter templates](community/ai-learning-hub-email-newsletter-templates.md) | Five respectful invitation templates for opted-in subscribers |
 | [Week 1 and 2 completion badges](community/week-1-and-2-completion-badges.md) | Interactive progress checklists, badge claims, and maintainer review guidance |
 | [Week 4 collaborative capstone](community/week-04-collaborative-capstone.md) | A beginner-and-builder team project for a safe Community Resource Review Assistant |
@@ -68,6 +69,7 @@ If you are not sure which path fits, take the **Beginner** path first. The follo
 | [Graduate email notification sequence](community/graduate-email-notification-sequence.md) | Privacy-safe opt-in congratulatory email, certificate delivery, and Day 7 and Day 30 follow-up guidance |
 | [Capstone team and progress tracker](community/capstone-team-and-progress-tracker.md) | Team-formation and milestone workflow, issue templates, status labels, and review boundaries |
 | [Capstone video walkthrough script](community/week-04-capstone-video-walkthrough-script.md) | Production-ready 12–15 minute script for project, testing, submission, and graduation onboarding |
+| [Stakeholder and partner pitch script](community/ai-learning-hub-stakeholder-pitch-script.md) | A 15–18 minute presentation script for partners, mentors, sponsors, employers, and community hosts |
 
 ## Community standard
 
