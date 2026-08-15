@@ -58,6 +58,9 @@ If you are not sure which path fits, take the **Beginner** path first. The follo
 | [Week 1 and 2 completion badges](community/week-1-and-2-completion-badges.md) | Interactive progress checklists, badge claims, and maintainer review guidance |
 | [Week 4 collaborative capstone](community/week-04-collaborative-capstone.md) | A beginner-and-builder team project for a safe Community Resource Review Assistant |
 | [Live introductory video workshop](community/live-introductory-video-workshop.md) | A 45-minute facilitation outline and script for welcoming new community members |
+| [Week 4 feedback and grading rubric](community/week-04-capstone-feedback-and-grading-rubric.md) | An evidence-based assessment and feedback framework for beginner and intermediate capstone roles |
+| [Week 4 capstone launch email](community/week-04-capstone-launch-email.md) | A ready-to-send member announcement, plain-text version, and signup follow-up message |
+| [Workshop presentation script](community/live-introductory-workshop-presentation-script.md) | Slide-by-slide speaking notes, interactions, transitions, and question facilitation guidance |
 
 ## Community standard
 
