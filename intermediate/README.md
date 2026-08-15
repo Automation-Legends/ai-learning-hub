@@ -21,6 +21,8 @@ The core sequence above builds the foundation. Use the weekly modules to apply t
 |---|---|---|
 | [**Week 2 — Automation Workflows and APIs**](week-02-automation-workflows-and-apis.md) | Connect workflow design to API requests, webhooks, credential safety, and draft-and-review automation | A one-page automation design and five-case test set |
 
+After completing Week 2, continue to the [Advanced Path](../advanced/README.md) for **Week 3: Custom Agents and Vector Databases**.
+
 ## What you need
 
 Bring one recurring task that involves text, structured notes, categorization, summarization, drafting, or decision support. You do not need to code, though you may apply the concepts with code, an API, or a no-code automation tool. Use test data or authorized, minimized data while learning.

@@ -10,6 +10,7 @@ Welcome to the **Automation Legends AI Learning Hub**. This community resource h
 |---|---|---|---|
 | [**Beginner**](beginner/README.md) | Are new to generative AI or want stronger fundamentals | Write clear prompts, check outputs, protect information, and finish a small AI-assisted project | 3–5 hours |
 | [**Intermediate**](intermediate/README.md) | Already use AI and want more repeatable results | Design workflows, create reusable prompt templates, evaluate results, and specify an automation | 5–8 hours |
+| [**Advanced**](advanced/README.md) | Can design and evaluate a bounded AI workflow | Design custom agents, governed knowledge retrieval, and evidence-based advanced projects | 6–10 hours |
 
 Each module includes a concise explanation, an activity, a completion check, and a reflection prompt. You do not need a paid AI tool or programming experience to begin.
 
@@ -52,6 +53,9 @@ If you are not sure which path fits, take the **Beginner** path first. The follo
 | [Beginner AI tools and prompts](resources/beginner-ai-tools-and-prompts.md) | Tool-selection advice, direct official links, and ten safe starter prompts |
 | [Week 2: Automation workflows and APIs](intermediate/week-02-automation-workflows-and-apis.md) | An intermediate module on API requests, webhooks, credentials, and draft-and-review automation |
 | [Social media announcement](community/ai-learning-hub-social-announcement.md) | Platform-ready invitations and a publishing checklist for welcoming new members |
+| [Week 3: Custom agents and vector databases](advanced/week-03-custom-agents-and-vector-databases.md) | An advanced module on bounded agents, knowledge retrieval, safeguards, and evaluation |
+| [Email newsletter templates](community/ai-learning-hub-email-newsletter-templates.md) | Five respectful invitation templates for opted-in subscribers |
+| [Week 1 and 2 completion badges](community/week-1-and-2-completion-badges.md) | Interactive progress checklists, badge claims, and maintainer review guidance |
 
 ## Community standard
 
